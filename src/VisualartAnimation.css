@@ -1,0 +1,175 @@
+    
+.swinganimation{
+    margin-top: -30px;
+    animation: swing 2s ease-out ,slidein 1s, rotateout 1s 8s;
+}
+
+@keyframes swing {
+
+  20% {
+    transform: rotate(40deg);
+  }
+
+  40% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  
+  60% {
+    transform: rotate(-20deg);
+  }
+  70% {
+    transform: rotate(20deg);
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+
+  90% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+
+
+  to{
+    transform: rotate(-0deg);
+  }
+
+}
+
+@keyframes slidein {
+from {
+
+  margin-right: 40%;
+}
+
+to {
+  margin-right: 0%;
+ 
+}
+}
+
+@keyframes rotateout {
+from {
+    animation-delay: 30s;
+    margin-right: 0%;
+    transform: rotate(0deg);
+}
+
+to {
+    animation-delay: 30s;
+    margin-right: -100%;
+    transform: rotate(360deg);
+}
+}
+
+.block-appear{
+    position: absolute;
+}
+
+.block-appear span{
+    opacity: 0;
+    animation: get-block 0.0001s linear forwards;
+    animation-delay: 1.4s;
+}
+
+.block-appear:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #5e239d;
+    animation: block-appear 1.3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1s;
+}
+
+
+@keyframes block-appear{
+    0%{
+        left: 0;
+        width: 0%;
+    }
+    50%{
+        left: 0;
+        width: 100%;
+    }
+    100%{
+        left: 100%;
+        width: 0%;
+    }
+}
+
+
+
+@keyframes get-block{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  
+}
+
+#second {
+    top: 32%;
+    left: 33.6%;
+}
+
+#second span{
+    animation-delay: 2s; 
+}
+
+#second.block-appear:after{
+    background: #cd9eff;
+    animation-delay: 1.4s;
+    
+}
+
+#third {
+    top: 32%;
+    left: 33.6%;
+}
+
+#third span{
+    animation-delay: 2s;
+}
+
+#third.block-appear:after{
+    background: #dfc1ff;
+    animation-delay: 1.8s;
+    
+}
+.brödtext{
+    animation: move-brödtext 3s ease-in;
+}
+
+@keyframes move-brödtext {
+    from{
+        margin-top: 100%;
+    }
+    to{
+        margin-top: 50%;
+    }
+}
+
+
+.splash{
+    animation:spinning 10s linear infinite ;
+    animation-play-state: paused;
+}
+
+.splash:hover{
+    animation-play-state: running;
+}
+
+@keyframes spinning {
+    0%   {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}

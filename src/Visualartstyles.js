@@ -1,0 +1,1 @@
+import ReactFontFace from 'react-font-face'

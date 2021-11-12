@@ -1,0 +1,106 @@
+
+.screenlayout{
+    max-width: 1080px;
+    max-height: 1920px;
+    text-align: center;
+}
+
+.swing{
+
+    filter: invert(30%) sepia(84%) saturate(6760%) hue-rotate(353deg) brightness(96%) contrast(131%);
+}
+
+.manerlayout{
+    filter: invert(39%) sepia(255%) saturate(506%) hue-rotate(308deg) brightness(180%) contrast(110%)
+}
+
+.newColor {
+    filter: invert(30%) sepia(84%) saturate(6760%) hue-rotate(353deg) brightness(96%) contrast(131%);
+}
+
+.maner{
+    font-family: "ICARubrikBold";
+    font-size: 50px;
+    position: relative;
+    margin-top: -90px;
+    margin-right: 10px;
+    color: white;
+}
+
+.swingh1{
+    font-family: "Icarubrik";
+    font-size: 90px;
+    position: relative;
+    margin-top: -140px;
+    margin-right: 40px;
+    overflow: hidden;
+    color: black;
+}
+.swingh2{
+    font-family: "Icarubrik";
+    font-size: 60px;
+    position: relative;
+    margin-top: -160px;
+    margin-right: -85px;
+    overflow: hidden;
+    color: black;
+}
+.swingh3{
+    font-family: "icatext";
+    font-size: 20px;
+    position: relative;
+    margin-top: -60px;
+    margin-right: -80px;
+    overflow: hidden;
+    color: black;
+}
+
+@font-face {
+    font-family: "Icarubrik";
+    src: local("icarubriksiffror-webfont"),
+     url("./fonts/icarubriksiffror-webfont.ttf") format("truetype");
+     
+    font-weight: bold;
+    }
+
+@font-face {
+    font-family: "icatext-black-webfont";
+    src: local("icatext-black-webfont"),
+        url("./fonts/icatext-black-webfont.ttf") format("truetype");
+        
+    font-weight: bold;
+    }
+
+@font-face {
+    font-family: "ICATextWebRegular";
+    src: local("ICATextWebRegular"),
+        url("./fonts/ICATextWebRegular.ttf") format("truetype");
+        
+    font-weight: bold;
+    }
+    
+@font-face {
+    font-family: "ICARubrikBold";
+    src: local("ICARubrikBold"),
+        url("./fonts/ICARubrikBold.ttf") format("truetype");
+    font-weight: bold;
+    }
+.Icarubrik {
+    font-family: "Icarubrik";
+}
+
+.icatext {
+    font-family: "icatext-black-webfont";
+}
+
+.ICATextWebRegular {
+    font-family: "ICATextWebRegular";
+}
+
+.ICATextWebRegular {
+    font-family: "ICATextWebRegular";
+}
+
+.ICARubrikBold {
+    font-family: "ICARubrikBold";
+}
